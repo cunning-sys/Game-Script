@@ -1,3 +1,4 @@
+local levelCheck = true
 local levelValue = game.Players.LocalPlayer.leaderstats.Level.Value
 
 local desertTemple = {
@@ -277,7 +278,7 @@ local atNightmare = {
         [5] = false,
         [6] = true
     }
-
+if levelCheck == true then
 if levelValue > 1 and levelValue < 5 then
     game:GetService("ReplicatedStorage").remotes.getDungeonStats:InvokeServer(unpack(desertTemple))
     wait(1)
@@ -394,4 +395,5 @@ elseif tonumber(levelValue)> 165 then
     game:GetService("ReplicatedStorage").remotes.getDungeonStats:InvokeServer(unpack(aquaticTemple))
     wait(1)
     game:GetService("ReplicatedStorage").remotes.createLobby:InvokeServer(unpack(atNightmare))
+end
 end
