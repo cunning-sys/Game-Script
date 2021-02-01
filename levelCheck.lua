@@ -1,44 +1,11 @@
-local levelCheck = true
 local levelValue = game.Players.LocalPlayer.leaderstats.Level.Value
 
-local desertTemple = {
+if levelValue > 0 and levelValue < 5 then
+    local desertTemple = {
         [1] = "Desert Temple"
     }
-local winterOutpost = {
-        [1] = "Winter Outpost"
-    }
-local pirateIsland = {
-        [1] = "Pirate Island"
-    }
-local kingsCastle = {
-        [1] = "King's Island"
-    }
-local theUnderworld = {
-        [1] = "The Underworld"
-    }
-local samuraiPalace = {
-        [1] = "Samurai Palace"
-    }
-local theCanals = {
-        [1] = "The Canals"
-    }
-local ghastlyHarbor = {
-        [1] = "Ghastly Harbor"
-    }
-local steampunkSewers = {
-        [1] = "Steampunk Sewers"
-    }
-local orbitalOutpost = {
-        [1] = "Orbital Outpost"
-    }
-local volcanicChambers = {
-        [1] = "Volcanic Chambers"
-    }
-local aquaticTemple = {
-        [1] = "Aquatic Temple"
-    }
-
-local dtEasy = {
+    
+    local dtEasy = {
         [1] = "Desert Temple",
         [2] = "Easy",
         [3] = 0,
@@ -46,7 +13,18 @@ local dtEasy = {
         [5] = false,
         [6] = true
     }
-local dtMedium = {
+    
+    game:GetService("ReplicatedStorage").remotes.getDungeonStats:InvokeServer(unpack(desertTemple))
+    wait(1)
+    game:GetService("ReplicatedStorage").remotes.createLobby:InvokeServer(unpack(dtEasy))
+end
+
+if levelValue > 5 and levelValue < 11 then
+    local desertTemple = {
+        [1] = "Desert Temple"
+    }
+    
+    local dtMedium = {
         [1] = "Desert Temple",
         [2] = "Medium",
         [3] = 0,
@@ -54,7 +32,18 @@ local dtMedium = {
         [5] = false,
         [6] = true
     }
-local dtHard = {
+    
+    game:GetService("ReplicatedStorage").remotes.getDungeonStats:InvokeServer(unpack(desertTemple))
+    wait(1)
+    game:GetService("ReplicatedStorage").remotes.createLobby:InvokeServer(unpack(dtMedium))
+end
+
+if levelValue > 11 and levelValue < 19 then
+    local desertTemple = {
+        [1] = "Desert Temple"
+    }
+    
+    local dtHard = {
         [1] = "Desert Temple",
         [2] = "Hard",
         [3] = 0,
@@ -62,7 +51,18 @@ local dtHard = {
         [5] = false,
         [6] = true
     }
-local dtInsane = {
+    
+    game:GetService("ReplicatedStorage").remotes.getDungeonStats:InvokeServer(unpack(desertTemple))
+    wait(1)
+    game:GetService("ReplicatedStorage").remotes.createLobby:InvokeServer(unpack(dtHard))
+end
+
+if levelValue > 19 and levelValue < 26 then
+    local desertTemple = {
+        [1] = "Desert Temple"
+    }
+    
+    local dtInsane = {
         [1] = "Desert Temple",
         [2] = "Insane",
         [3] = 0,
@@ -70,7 +70,18 @@ local dtInsane = {
         [5] = false,
         [6] = true
     }
-local dtNightmare = {
+    
+    game:GetService("ReplicatedStorage").remotes.getDungeonStats:InvokeServer(unpack(desertTemple))
+    wait(1)
+    game:GetService("ReplicatedStorage").remotes.createLobby:InvokeServer(unpack(dtInsane))
+end
+
+if levelValue > 26 and levelValue < 32 then
+    local desertTemple = {
+        [1] = "Desert Temple"
+    }
+    
+    local dtNightmare = {
         [1] = "Desert Temple",
         [2] = "Nightmare",
         [3] = 0,
@@ -78,7 +89,18 @@ local dtNightmare = {
         [5] = false,
         [6] = true
     }
-local woEasy = {
+    
+    game:GetService("ReplicatedStorage").remotes.getDungeonStats:InvokeServer(unpack(desertTemple))
+    wait(1)
+    game:GetService("ReplicatedStorage").remotes.createLobby:InvokeServer(unpack(dtInsane))
+end
+
+if levelValue > 32 and levelValue < 39 then
+    local winterOutpost = {
+        [1] = "Winter Outpost"
+    }
+    
+    local woMedium = {
         [1] = "Winter Outpost",
         [2] = "Easy",
         [3] = 0,
@@ -86,7 +108,18 @@ local woEasy = {
         [5] = false,
         [6] = true
     }
-local woMedium = {
+    
+    game:GetService("ReplicatedStorage").remotes.getDungeonStats:InvokeServer(unpack(winterOutpost))
+    wait(1)
+    game:GetService("ReplicatedStorage").remotes.createLobby:InvokeServer(unpack(woEasy))
+end
+
+if levelValue > 39 and levelValue < 44 then
+    local winterOutpost = {
+        [1] = "Winter Outpost"
+    }
+    
+    local woMedium = {
         [1] = "Winter Outpost",
         [2] = "Medium",
         [3] = 0,
@@ -94,7 +127,18 @@ local woMedium = {
         [5] = false,
         [6] = true
     }
-local woHard = {
+    
+    game:GetService("ReplicatedStorage").remotes.getDungeonStats:InvokeServer(unpack(winterOutpost))
+    wait(1)
+    game:GetService("ReplicatedStorage").remotes.createLobby:InvokeServer(unpack(woMedium))
+end
+
+if levelValue > 44 and levelValue < 49 then
+    local winterOutpost = {
+        [1] = "Winter Outpost"
+    }
+    
+    local woHard = {
         [1] = "Winter Outpost",
         [2] = "Hard",
         [3] = 0,
@@ -102,7 +146,18 @@ local woHard = {
         [5] = false,
         [6] = true
     }
-local woInsane = {
+    
+    game:GetService("ReplicatedStorage").remotes.getDungeonStats:InvokeServer(unpack(winterOutpost))
+    wait(1)
+    game:GetService("ReplicatedStorage").remotes.createLobby:InvokeServer(unpack(woHard))
+end
+
+if levelValue > 49 and levelValue < 54 then
+    local winterOutpost = {
+        [1] = "Winter Outpost"
+    }
+    
+    local woInsane = {
         [1] = "Winter Outpost",
         [2] = "Insane",
         [3] = 0,
@@ -110,6 +165,17 @@ local woInsane = {
         [5] = false,
         [6] = true
     }
+    
+    game:GetService("ReplicatedStorage").remotes.getDungeonStats:InvokeServer(unpack(winterOutpost))
+    wait(1)
+    game:GetService("ReplicatedStorage").remotes.createLobby:InvokeServer(unpack(woInsane))
+end
+
+if levelValue > 54 and levelValue < 59 then
+    local winterOutpost = {
+        [1] = "Winter Outpost"
+    }
+    
 local woNightmare = {
         [1] = "Winter Outpost",
         [2] = "Nightmare",
@@ -118,282 +184,389 @@ local woNightmare = {
         [5] = false,
         [6] = true
     }
-local piInsane = {
-        [1] = "Pirate Island",
-        [2] = "Insane",
-        [3] = 0,
-        [4] = false,
-        [5] = false,
-        [6] = true
-    }
-local piNightmare = {
-        [1] = "Pirate Island",
-        [2] = "Nightmare",
-        [3] = 0,
-        [4] = false,
-        [5] = false,
-        [6] = true
-    }
-local kcInsane = {
-        [1] = "King's Island",
-        [2] = "Insane",
-        [3] = 0,
-        [4] = false,
-        [5] = false,
-        [6] = true
-    }
-local kcNightmare = {
-        [1] = "King's Island",
-        [2] = "Nightmare",
-        [3] = 0,
-        [4] = false,
-        [5] = false,
-        [6] = true
-    }
-local tuInsane = {
-        [1] = "The Underworld",
-        [2] = "Insane",
-        [3] = 0,
-        [4] = false,
-        [5] = false,
-        [6] = true
-    }
-local tuNightmare = {
-        [1] = "The Underworld",
-        [2] = "Nightmare",
-        [3] = 0,
-        [4] = false,
-        [5] = false,
-        [6] = true
-    }
-local spInsane = {
-        [1] = "Samurai Palace",
-        [2] = "Insane",
-        [3] = 0,
-        [4] = false,
-        [5] = false,
-        [6] = true
-    }
-local spNightmare = {
-        [1] = "Samurai Palace",
-        [2] = "Nightmare",
-        [3] = 0,
-        [4] = false,
-        [5] = false,
-        [6] = true
-    }
-local tcInsane = {
-        [1] = "The Canals",
-        [2] = "Insane",
-        [3] = 0,
-        [4] = false,
-        [5] = false,
-        [6] = true
-    }
-local tcNightmare = {
-        [1] = "The Canals",
-        [2] = "Nightmare",
-        [3] = 0,
-        [4] = false,
-        [5] = false,
-        [6] = true
-    }
-local ghInsane = {
-        [1] = "Ghastly Harbor",
-        [2] = "Insane",
-        [3] = 0,
-        [4] = false,
-        [5] = false,
-        [6] = true
-    }
-local ghNightmare = {
-        [1] = "Ghastly Harbor",
-        [2] = "Nightmare",
-        [3] = 0,
-        [4] = false,
-        [5] = false,
-        [6] = true
-    }
-local ssInsane = {
-        [1] = "Steampunk Sewers",
-        [2] = "Insane",
-        [3] = 0,
-        [4] = false,
-        [5] = false,
-        [6] = true
-    }
-local ssNightmare = {
-        [1] = "Steampunk Sewers",
-        [2] = "Nightmare",
-        [3] = 0,
-        [4] = false,
-        [5] = false,
-        [6] = true
-    }
-local ooInsane = {
-        [1] = "Orbital Outpost",
-        [2] = "Insane",
-        [3] = 0,
-        [4] = false,
-        [5] = false,
-        [6] = true
-    }
-local ooNightmare = {
-        [1] = "Orbital Outpost",
-        [2] = "Nightmare",
-        [3] = 0,
-        [4] = false,
-        [5] = false,
-        [6] = true
-    }
-local vcInsane = {
-        [1] = "Volcanic Chambers",
-        [2] = "Insane",
-        [3] = 0,
-        [4] = false,
-        [5] = false,
-        [6] = true
-    }
-local vcNightmare = {
-        [1] = "Volcanic Chambers",
-        [2] = "Nightmare",
-        [3] = 0,
-        [4] = false,
-        [5] = false,
-        [6] = true
-    }
-local atInsane = {
-        [1] = "Aquatic Temple",
-        [2] = "Insane",
-        [3] = 0,
-        [4] = false,
-        [5] = false,
-        [6] = true
-    }
-local atNightmare = {
-        [1] = "Aquatic Temple",
-        [2] = "Nightmare",
-        [3] = 0,
-        [4] = false,
-        [5] = false,
-        [6] = true
-    }
-if levelCheck == true then
-if levelValue > 1 and levelValue < 5 then
-    game:GetService("ReplicatedStorage").remotes.getDungeonStats:InvokeServer(unpack(desertTemple))
-    wait(1)
-    game:GetService("ReplicatedStorage").remotes.createLobby:InvokeServer(unpack(dtEasy))
-elseif levelValue > 6 and levelValue < 11 then
-    game:GetService("ReplicatedStorage").remotes.getDungeonStats:InvokeServer(unpack(desertTemple))
-    wait(1)
-    game:GetService("ReplicatedStorage").remotes.createLobby:InvokeServer(unpack(dtMedium))
-elseif levelValue > 12 and levelValue < 19 then
-    game:GetService("ReplicatedStorage").remotes.getDungeonStats:InvokeServer(unpack(desertTemple))
-    wait(1)
-    game:GetService("ReplicatedStorage").remotes.createLobby:InvokeServer(unpack(dtHard))
-elseif levelValue > 20 and levelValue < 32 then
-    game:GetService("ReplicatedStorage").remotes.getDungeonStats:InvokeServer(unpack(desertTemple))
-    wait(1)
-    game:GetService("ReplicatedStorage").remotes.createLobby:InvokeServer(unpack(dtInsane))
-elseif levelValue > 33 and levelValue < 39 then
-    game:GetService("ReplicatedStorage").remotes.getDungeonStats:InvokeServer(unpack(desertTemple))
-    wait(1)
-    game:GetService("ReplicatedStorage").remotes.createLobby:InvokeServer(unpack(dtNightmare))
-elseif levelValue > 40 and levelValue < 44 then
-    game:GetService("ReplicatedStorage").remotes.getDungeonStats:InvokeServer(unpack(winterOutpost))
-    wait(1)
-    game:GetService("ReplicatedStorage").remotes.createLobby:InvokeServer(unpack(woEasy))
-elseif levelValue > 45 and levelValue < 49 then
-    game:GetService("ReplicatedStorage").remotes.getDungeonStats:InvokeServer(unpack(winterOutpost))
-    wait(1)
-    game:GetService("ReplicatedStorage").remotes.createLobby:InvokeServer(unpack(woMedium))
-elseif levelValue > 50 and levelValue < 54 then
-    game:GetService("ReplicatedStorage").remotes.getDungeonStats:InvokeServer(unpack(winterOutpost))
-    wait(1)
-    game:GetService("ReplicatedStorage").remotes.createLobby:InvokeServer(unpack(woInsane))
-elseif levelValue > 55 and levelValue < 59 then
+    
     game:GetService("ReplicatedStorage").remotes.getDungeonStats:InvokeServer(unpack(winterOutpost))
     wait(1)
     game:GetService("ReplicatedStorage").remotes.createLobby:InvokeServer(unpack(woNightmare))
-elseif levelValue > 60 and levelValue < 64 then
+end
+
+if levelValue > 59 and levelValue < 64 then
+    local pirateIsland = {
+        [1] = "Pirate Island"
+    }
+    
+    local piNightmare = {
+        [1] = "Pirate Island",
+        [2] = "Nightmare",
+        [3] = 0,
+        [4] = false,
+        [5] = false,
+        [6] = true
+    }
+    
     game:GetService("ReplicatedStorage").remotes.getDungeonStats:InvokeServer(unpack(pirateIsland))
     wait(1)
     game:GetService("ReplicatedStorage").remotes.createLobby:InvokeServer(unpack(piInsane))
-elseif levelValue > 65 and levelValue < 69 then
+end
+
+if levelValue > 64 and levelValue < 69 then
+    local pirateIsland = {
+        [1] = "Pirate Island"
+    }
+    
+    local piNightmare = {
+        [1] = "Pirate Island",
+        [2] = "Nightmare",
+        [3] = 0,
+        [4] = false,
+        [5] = false,
+        [6] = true
+    }
+    
     game:GetService("ReplicatedStorage").remotes.getDungeonStats:InvokeServer(unpack(pirateIsland))
     wait(1)
     game:GetService("ReplicatedStorage").remotes.createLobby:InvokeServer(unpack(piNightmare))
-elseif levelValue > 70 and levelValue < 74 then
+end
+
+if levelValue > 69 and levelValue < 74 then
+    local kingsCastle = {
+        [1] = "King's Island"
+    }
+    
+    local kcInsane = {
+        [1] = "King's Island",
+        [2] = "Insane",
+        [3] = 0,
+        [4] = false,
+        [5] = false,
+        [6] = true
+    }
+    
     game:GetService("ReplicatedStorage").remotes.getDungeonStats:InvokeServer(unpack(kingsCastle))
     wait(1)
     game:GetService("ReplicatedStorage").remotes.createLobby:InvokeServer(unpack(kcInsane))
-elseif levelValue > 75 and levelValue < 79 then
+end
+
+if levelValue > 74 and levelValue < 79 then
+    local kingsCastle = {
+        [1] = "King's Island"
+    }
+    
+    local kcNightmare = {
+        [1] = "King's Island",
+        [2] = "Nightmare",
+        [3] = 0,
+        [4] = false,
+        [5] = false,
+        [6] = true
+    }
+    
     game:GetService("ReplicatedStorage").remotes.getDungeonStats:InvokeServer(unpack(kingsCastle))
     wait(1)
     game:GetService("ReplicatedStorage").remotes.createLobby:InvokeServer(unpack(kcNightmare))
-elseif levelValue > 80 and levelValue < 84 then
+end
+
+if levelValue > 79 and levelValue < 84 then
+    local theUnderworld = {
+        [1] = "The Underworld"
+    }
+    
+    local tuInsane = {
+        [1] = "The Underworld",
+        [2] = "Insane",
+        [3] = 0,
+        [4] = false,
+        [5] = false,
+        [6] = true
+    }
+    
     game:GetService("ReplicatedStorage").remotes.getDungeonStats:InvokeServer(unpack(theUnderworld))
     wait(1)
     game:GetService("ReplicatedStorage").remotes.createLobby:InvokeServer(unpack(tuInsane))
-elseif levelValue > 85 and levelValue < 89 then
+end
+
+if levelValue > 84 and levelValue < 89 then
+    local theUnderworld = {
+        [1] = "The Underworld"
+    }
+    
+    local tuNightmare = {
+        [1] = "The Underworld",
+        [2] = "Nightmare",
+        [3] = 0,
+        [4] = false,
+        [5] = false,
+        [6] = true
+    }
+    
     game:GetService("ReplicatedStorage").remotes.getDungeonStats:InvokeServer(unpack(theUnderworld))
     wait(1)
     game:GetService("ReplicatedStorage").remotes.createLobby:InvokeServer(unpack(tuNightmare))
-elseif levelValue > 90 and levelValue < 94 then
+    
+end
+
+if levelValue > 89 and levelValue < 94 then
+    local samuraiPalace = {
+        [1] = "Samurai Palace"
+    }
+    
+    local spInsane = {
+        [1] = "Samurai Palace",
+        [2] = "Insane",
+        [3] = 0,
+        [4] = false,
+        [5] = false,
+        [6] = true
+    }
+    
     game:GetService("ReplicatedStorage").remotes.getDungeonStats:InvokeServer(unpack(samuraiPalace))
     wait(1)
     game:GetService("ReplicatedStorage").remotes.createLobby:InvokeServer(unpack(spInsane))
-elseif levelValue > 95 and levelValue < 99 then
+end
+
+if levelValue > 94 and levelValue < 99 then
+    local samuraiPalace = {
+        [1] = "Samurai Palace"
+    }
+    
+    local spNightmare = {
+        [1] = "Samurai Palace",
+        [2] = "Nightmare",
+        [3] = 0,
+        [4] = false,
+        [5] = false,
+        [6] = true
+    }
+    
     game:GetService("ReplicatedStorage").remotes.getDungeonStats:InvokeServer(unpack(samuraiPalace))
     wait(1)
     game:GetService("ReplicatedStorage").remotes.createLobby:InvokeServer(unpack(spNightmare))
-elseif levelValue > 100 and levelValue < 104 then
+end
+
+if levelValue > 99 and levelValue < 104 then
+    local theCanals = {
+        [1] = "The Canals"
+    }
+    
+    local tcInsane = {
+        [1] = "The Canals",
+        [2] = "Insane",
+        [3] = 0,
+        [4] = false,
+        [5] = false,
+        [6] = true
+    }
+    
     game:GetService("ReplicatedStorage").remotes.getDungeonStats:InvokeServer(unpack(theCanals))
     wait(1)
     game:GetService("ReplicatedStorage").remotes.createLobby:InvokeServer(unpack(tcInsane))
-elseif levelValue > 105 and levelValue < 109 then
+end
+
+if levelValue > 104 and levelValue < 109 then
+    local theCanals = {
+        [1] = "The Canals"
+    }
+    
+    local tcNightmare = {
+        [1] = "The Canals",
+        [2] = "Nightmare",
+        [3] = 0,
+        [4] = false,
+        [5] = false,
+        [6] = true
+    }
+    
     game:GetService("ReplicatedStorage").remotes.getDungeonStats:InvokeServer(unpack(theCanals))
     wait(1)
     game:GetService("ReplicatedStorage").remotes.createLobby:InvokeServer(unpack(tcNightmare))
-elseif levelValue > 110 and levelValue < 114 then
+end
+
+if levelValue > 109 and levelValue < 114 then
+    local ghastlyHarbor = {
+        [1] = "Ghastly Harbor"
+    }
+    
+    local ghInsane = {
+        [1] = "Ghastly Harbor",
+        [2] = "Insane",
+        [3] = 0,
+        [4] = false,
+        [5] = false,
+        [6] = true
+    }
+    
     game:GetService("ReplicatedStorage").remotes.getDungeonStats:InvokeServer(unpack(ghastlyHarbor))
     wait(1)
     game:GetService("ReplicatedStorage").remotes.createLobby:InvokeServer(unpack(ghInsane))
-elseif levelValue > 115 and levelValue < 119 then
+end
+
+if levelValue > 114 and levelValue < 119 then
+    local ghastlyHarbor = {
+        [1] = "Ghastly Harbor"
+    }
+    
+    local ghNightmare = {
+        [1] = "Ghastly Harbor",
+        [2] = "Nightmare",
+        [3] = 0,
+        [4] = false,
+        [5] = false,
+        [6] = true
+    }
+    
     game:GetService("ReplicatedStorage").remotes.getDungeonStats:InvokeServer(unpack(ghastlyHarbor))
     wait(1)
     game:GetService("ReplicatedStorage").remotes.createLobby:InvokeServer(unpack(ghNightmare))
-elseif levelValue > 120 and levelValue < 124 then
+end
+
+if levelValue > 119 and levelValue < 124 then
+    local steampunkSewers = {
+        [1] = "Steampunk Sewers"
+    }
+    
+    local ssInsane = {
+        [1] = "Steampunk Sewers",
+        [2] = "Insane",
+        [3] = 0,
+        [4] = false,
+        [5] = false,
+        [6] = true
+    }
+    
     game:GetService("ReplicatedStorage").remotes.getDungeonStats:InvokeServer(unpack(steampunkSewers))
     wait(1)
     game:GetService("ReplicatedStorage").remotes.createLobby:InvokeServer(unpack(ssInsane))
-elseif levelValue > 125 and levelValue < 139 then
+end
+
+if levelValue > 124 and levelValue < 139 then
+    local steampunkSewers = {
+        [1] = "Steampunk Sewers"
+    }
+    
+    local ssNightmare = {
+        [1] = "Steampunk Sewers",
+        [2] = "Nightmare",
+        [3] = 0,
+        [4] = false,
+        [5] = false,
+        [6] = true
+    }
+    
     game:GetService("ReplicatedStorage").remotes.getDungeonStats:InvokeServer(unpack(steampunkSewers))
     wait(1)
     game:GetService("ReplicatedStorage").remotes.createLobby:InvokeServer(unpack(ssNightmare))
-elseif levelValue > 140 and levelValue < 144 then
+end
+
+if levelValue > 139 and levelValue < 144 then
+    local orbitalOutpost = {
+        [1] = "Orbital Outpost"
+    }
+    
+    local ooInsane = {
+        [1] = "Orbital Outpost",
+        [2] = "Insane",
+        [3] = 0,
+        [4] = false,
+        [5] = false,
+        [6] = true
+    }
+    
     game:GetService("ReplicatedStorage").remotes.getDungeonStats:InvokeServer(unpack(orbitalOutpost))
     wait(1)
     game:GetService("ReplicatedStorage").remotes.createLobby:InvokeServer(unpack(ooInsane))
-elseif levelValue > 145 and levelValue < 149 then
+end
+
+if levelValue > 144 and levelValue < 149 then
+    local orbitalOutpost = {
+        [1] = "Orbital Outpost"
+    }
+    
+    local ooNightmare = {
+        [1] = "Orbital Outpost",
+        [2] = "Nightmare",
+        [3] = 0,
+        [4] = false,
+        [5] = false,
+        [6] = true
+    }
+    
     game:GetService("ReplicatedStorage").remotes.getDungeonStats:InvokeServer(unpack(orbitalOutpost))
     wait(1)
     game:GetService("ReplicatedStorage").remotes.createLobby:InvokeServer(unpack(ooNightmare))
-elseif levelValue > 150 and levelValue < 154 then
+end
+
+if levelValue > 149 and levelValue < 154 then
+    local volcanicChambers = {
+        [1] = "Volcanic Chambers"
+    }
+    
+    local vcInsane = {
+        [1] = "Volcanic Chambers",
+        [2] = "Insane",
+        [3] = 0,
+        [4] = false,
+        [5] = false,
+        [6] = true
+    }
+    
     game:GetService("ReplicatedStorage").remotes.getDungeonStats:InvokeServer(unpack(volcanicChambers))
     wait(1)
     game:GetService("ReplicatedStorage").remotes.createLobby:InvokeServer(unpack(vcInsane))
-elseif levelValue > 155 and levelValue < 159 then
+end
+
+if levelValue > 154 and levelValue < 159 then
+    local volcanicChambers = {
+        [1] = "Volcanic Chambers"
+    }
+    
+    local vcNightmare = {
+        [1] = "Volcanic Chambers",
+        [2] = "Nightmare",
+        [3] = 0,
+        [4] = false,
+        [5] = false,
+        [6] = true
+    }
+    
     game:GetService("ReplicatedStorage").remotes.getDungeonStats:InvokeServer(unpack(volcanicChambers))
     wait(1)
     game:GetService("ReplicatedStorage").remotes.createLobby:InvokeServer(unpack(vcNightmare))
-elseif levelValue > 160 and levelValue < 164 then
+end
+
+if levelValue > 159 and levelValue < 164 then
+    local aquaticTemple = {
+        [1] = "Aquatic Temple"
+    }
+    
+    local atInsane = {
+        [1] = "Aquatic Temple",
+        [2] = "Insane",
+        [3] = 0,
+        [4] = false,
+        [5] = false,
+        [6] = true
+    }
+    
     game:GetService("ReplicatedStorage").remotes.getDungeonStats:InvokeServer(unpack(aquaticTemple))
     wait(1)
     game:GetService("ReplicatedStorage").remotes.createLobby:InvokeServer(unpack(atInsane))
-elseif tonumber(levelValue)> 165 then
+end
+
+if tonumber(levelValue)> 165 then
+    local aquaticTemple = {
+        [1] = "Aquatic Temple"
+    }
+    
+    local atNightmare = {
+        [1] = "Aquatic Temple",
+        [2] = "Nightmare",
+        [3] = 0,
+        [4] = false,
+        [5] = false,
+        [6] = true
+    }
+    
     game:GetService("ReplicatedStorage").remotes.getDungeonStats:InvokeServer(unpack(aquaticTemple))
     wait(1)
     game:GetService("ReplicatedStorage").remotes.createLobby:InvokeServer(unpack(atNightmare))
-end
 end
