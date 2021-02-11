@@ -324,7 +324,7 @@ if levelValue > 89 and levelValue < 95 then
     game:GetService("ReplicatedStorage").remotes.createLobby:InvokeServer(unpack(spInsane))
 end
 
-if levelValue > 94 and levelValue < 100 then
+if tonumber(LevelValue) > 94 then
     local samuraiPalace = {
         [1] = "Samurai Palace"
     }
