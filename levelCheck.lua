@@ -195,9 +195,9 @@ if levelValue > 59 and levelValue < 65 then
         [1] = "Pirate Island"
     }
     
-    local piNightmare = {
+    local piInsane = {
         [1] = "Pirate Island",
-        [2] = "Nightmare",
+        [2] = "Insane",
         [3] = 0,
         [4] = false,
         [5] = false,
