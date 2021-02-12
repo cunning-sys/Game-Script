@@ -249,11 +249,11 @@ end
 
 if levelValue > 74 and levelValue < 80 then
     local kingsCastle = {
-        [1] = "King's Island"
+        [1] = "King's Castle"
     }
     
     local kcNightmare = {
-        [1] = "King's Island",
+        [1] = "King's Castle",
         [2] = "Nightmare",
         [3] = 0,
         [4] = false,
