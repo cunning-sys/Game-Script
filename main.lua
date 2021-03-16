@@ -1,5 +1,5 @@
-local lobbyTime = "" -- How long it takes for you to load into the Lobby.
-local floorTime = "" -- How long it takes for you to load into the Wave Defense.
+local lobbyTime -- How long it takes for you to load into the Lobby.
+local floorTime -- How long it takes for you to load into the Wave Defense.
 
 if game.PlaceId == 2414851778 then
    wait(lobbyTime)
