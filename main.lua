@@ -3,7 +3,11 @@ local floorTime -- How long it takes for you to load into the Wave Defense.
 
 if game.PlaceId == 2414851778 then
    wait(lobbyTime)
-   game:GetService("ReplicatedStorage").remotes.loadPlayerCharacter:FireServer()
+   local args = {
+     [1] = true
+   }
+
+   game:GetService("ReplicatedStorage").remotes.loadPlayerCharacter:FireServer(unpack(args))
    wait(1)
    loadstring(game:HttpGet('https://raw.githubusercontent.com/owlsk/Dungeon-Quest/main/levelCheck.lua'))()
    wait(3)
